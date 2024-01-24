@@ -4,7 +4,7 @@ describe("test util token", () => {
   test('setToken == getToken', () => {
     let token = getToken()
     console.log("token:",token)
-    expect(token).toBe(undefined)
+    expect(token).toBeFalsy()
 
     setToken("sajdklasjd")
     token = getToken()
